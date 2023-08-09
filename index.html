@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>stripe</title>
+</head>
+
+<body>
+    <div id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="card">
+                        <div class="card-header bg-warning text-center">
+                            Stripe form
+                        </div>
+                        <div class="card-body">
+
+                            <form id="paymentForm">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="value" class="pay">Amount you want to pay:</label>
+                                        <input type="number" min="5" step="0.01" name="value" required id="amount"
+                                            class="form-control"><br>
+                                        <small class="form-text text-danger">
+                                            Up to two decimal positions, using a dot "."
+                                        </small>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <label for="currency" class="currency">Select Currency</label>
+                                        <select name="currency" id="" class="custom-select">
+                                            <option value="usd">USD</option>
+                                            <option value="eur">EUR</option>
+                                            <option value="gbp">GBP</option>
+                                            <option value="jpy">JPY</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <label class="mt-3" for="card-element">
+                                    Card details:
+                                </label>
+
+                                <div id="cardElement"></div>
+
+                                <small class="form-text text-muted" id="cardErrors" role="alert"></small>
+
+                                <input type="hidden" name="payment_method" id="paymentMethod">
+                                <br> <br>
+                                <button type="submit" id="payButton" class="btn btn-primary btn-lg">Pay with
+                                    stripe</button>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+
+    <script src="script.js"></script>
+    <script src="payment.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 400px;
+    width: 500px;
+    margin: auto;
+    margin-top: 200px;
+
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 3px #888888;
+}
+
+.card-header {
+    text-align: center;
+    background-color: rgb(55, 255, 0);
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.pay {
+    margin-left: 5px;
+    font-size: 20px;
+
+
+}
+
+.form-control {
+    margin-left: 5px;
+    margin-top: 5px;
+
+}
+
+.form-text {
+    margin-left: 220px;
+    font-size: 10px;
+}
+.currency{
+    font-size: 20px;
+}
+
+.col-auto {
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mt-3 {
+    margin-left: 5px;
+    font-size: 20px;
+    
+}
+
+#cardElement {
+    margin-left: 5px;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    padding: 8px 8px 8px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(60, 255, 0);
+    border: none;
+}
+
+.btn:hover {
+    background-color: red;
+    color: #ffff;
+    transition: .5s;
+}
